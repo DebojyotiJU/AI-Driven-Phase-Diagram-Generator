@@ -1,0 +1,62 @@
+AI-Driven Phase Diagram Generator for Binary Alloys
+
+A physics-informed machine-learning framework that predicts liquidus and solidus behavior for binary alloys using thermodynamic modeling plus surrogate ML prediction.
+The dataset is synthetically generated using a regular-solution model (van’t Hoff–based equilibrium), covering wide ranges of melting points, heats of fusion, and interaction parameters.
+
+This project includes:
+
+Complete Google Colab-ready notebook
+
+Automated synthetic dataset generation (scalable up to 1,000,000+ rows)
+
+Thermodynamic solver for liquidus/solidus estimation
+
+Random Forest surrogate model for instant phase diagram prediction
+
+Interactive 2D and 3D visualization suite
+
+SHAP explainability for feature-level insights
+
+Solver-vs-surrogate accuracy comparison
+
+Ready-made data saving + model export functions
+
+🧩 Features
+
+Synthetic dataset generator based on credible thermodynamic relations
+
+Liquidus and solidus proxy curves computed using numerical root solvers
+
+Surrogate ML model (Random Forest) trained on solver-generated phase boundaries
+
+Detailed diagnostics including:
+
+Parity plots
+
+Residual distributions
+
+Feature importance
+
+SHAP explanation plots
+
+Interactive 3D visualization built using Plotly
+
+Fast phase diagram generator function for new alloy systems
+
+🖥️ Run in Google Colab
+
+Open directly in Colab and execute cells sequentially.
+Adjust dataset scale by modifying n_systems and n_x in the generation block.
+
+📦 Requirements
+
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+scipy
+tqdm
+shap
+joblib
